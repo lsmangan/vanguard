@@ -67,30 +67,43 @@ body{
     background-color: #000000;
     color: #EAEAEA;
     font-family: 'Inter', sans-serif;
+    margin:0;
 }
 h1{
     font-size: 2rem;
     color: #007BFF;
     font-weight: bold;
+    padding: 1.5rem;
 }
 header{
+    border-bottom: 4px solid #007BFF;
     
+}
+header .container{
+    position: relative;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 1rem;
+    padding: 10px 20px; 
+    padding-left: 2em;
+}
+header h1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 40px;
 }
 header nav{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
 }
 nav{
     background-color: #000000;
     
 }
 nav ul {
-
   width: 200px;
   margin:0;
   padding:0;
@@ -124,7 +137,7 @@ nav label {
     user-select: none;
 }
 label span {
-    background-color: white;
+    background-color: #EAEAEA;
     display: block;
     height: .25rem;
     position: relative;
@@ -132,7 +145,7 @@ label span {
     width: 2rem;
 }
 label span:before, label span:after {
-    background: white;
+    background: #EAEAEA;
     content: '';
     display: block;
     height: 100%;
@@ -155,14 +168,101 @@ input:checked ~ ul {
 
 
 
+#request {
+    padding: 160px 20px;
+    text-align: center;
+    position: relative;
+    color: var(--white);
+    width: 100%;
+}
+.request-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em 1em;
+    backdrop-filter: blur(10px); 
+}
+.request-box h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.request-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+.request-box a {
+    display: inline-block;
+    background: var(--blue);
+    color: var(--white);
+    padding: 15px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+#expertise, #offer{
+    background-color: #EAEAEA;
+    color: #000000;
+    padding: 1em 1.3em;
+    
+}
+#expertise h2, #offer h2{
+    font-weight: bold;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+}
+#expertise h2{
+    padding-top: 1em;
+}
+#expertise p{
+    line-height: 1.5;
+}
+
+#offer{
+    padding-bottom: 40px;
+}
+
+.consulting, .solutions, .mergers, .transformation, .services, .innovation{
+    background-color: #007BFF;
+    color:#EAEAEA;
+    border-radius: 8px;
+    padding: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    
+}
+.consulting h3, .solutions h3, .mergers h3, .transformation h3, .services h3, .innovation h3{
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+
+#results{
+    background-color: #007BFF;
+    color:#EAEAEA;
+    padding: 1em 2em;
+    line-height: 1.5;
+}
+#results h2{
+    padding: 0.8em;
+}
+
+
+
 
 
 
 h2{
-    font-size: 1.5rem;
+    font-size: 32px;
+    font-weight: bold;
+    
 }
 h3{
     font-size: 1.15rem;
+    font-weight: bold;
+    padding-left: 0.5em;
 }
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 body{
